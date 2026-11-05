@@ -38,6 +38,7 @@ code/                     ← 每章配套的可运行脚本
   mcp_server.py           MCP server（stdio）
   mcp_client.py           MCP client + 自检
   ch03_mcp.py             用 MCP 工具跑同一套循环
+  ch04_memory.py          滑动窗口 + 摘要压缩 + 长期检索
 ```
 
 ## 4. 技术选型
@@ -68,7 +69,7 @@ code/                     ← 每章配套的可运行脚本
 | 01 | 最小单 agent：ReAct 循环（Thought / Action / Observation） | [chapters/01-react-single-agent.md](chapters/01-react-single-agent.md) | ✅ 已完成 |
 | 02 | 工具系统：注册表、参数 schema、错误回传、写操作确认 | [chapters/02-tool-system.md](chapters/02-tool-system.md) | ✅ 已完成 |
 | 03 | 原生 function calling：tool_calls、tool 角色、并行调用；shell 工具与 code agent 工具集；MCP 接入 | [chapters/03-function-calling.md](chapters/03-function-calling.md) | ✅ 已完成 |
-| 04 | 记忆：对话历史裁剪 + 长期记忆（向量检索） | — | 待开始 |
+| 04 | 记忆：滑动窗口、摘要压缩、跨会话检索 | [chapters/04-memory.md](chapters/04-memory.md) | ✅ 已完成 |
 | 05 | 规划：Plan-and-Execute / 任务分解 | — | 待开始 |
 | 06 | 反思：Self-Refine / 自我检查 | — | 待开始 |
 | 07 | 多 agent 协作：Supervisor 与消息传递 | — | 待开始 |

@@ -17,3 +17,6 @@ venv/
 .DS_Store
 .idea/
 .vscode/
+
+# 运行时数据
+memory.jsonl

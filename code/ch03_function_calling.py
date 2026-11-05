@@ -59,16 +59,17 @@ def build_schema(tools: dict[str, Tool]) -> list[dict]:
 # ---------- 2. 一次请求 ----------
 def call_llm(messages: list[dict], schema: list[dict]) -> dict:
     url = f"{BASE_URL.rstrip('/')}/chat/completions"
-    body = json.dumps({
+    body: dict = {
         "model": MODEL,
         "messages": messages,
         "temperature": 0,
-        "tools": schema,
-        "tool_choice": "auto",
-    }).encode()
+    }
+    if schema:  # 没有工具时不要发 "tools": []，有的服务端会因此报错
+        body["tools"] = schema
+        body["tool_choice"] = "auto"
     req = urllib.request.Request(
         url,
-        data=body,
+        data=json.dumps(body).encode(),
         headers={"Content-Type": "application/json", "Authorization": f"Bearer {API_KEY}"},
     )
     try:
