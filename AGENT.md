@@ -39,6 +39,7 @@ code/                     ← 每章配套的可运行脚本
   mcp_client.py           MCP client + 自检
   ch03_mcp.py             用 MCP 工具跑同一套循环
   ch04_memory.py          滑动窗口 + 摘要压缩 + 长期检索
+  ch05_retrieval.py       切分 + BM25 + LLM 重排 + 引用作答
 ```
 
 ## 4. 技术选型
@@ -70,12 +71,13 @@ code/                     ← 每章配套的可运行脚本
 | 02 | 工具系统：注册表、参数 schema、错误回传、写操作确认 | [chapters/02-tool-system.md](chapters/02-tool-system.md) | ✅ 已完成 |
 | 03 | 原生 function calling：tool_calls、tool 角色、并行调用；shell 工具与 code agent 工具集；MCP 接入 | [chapters/03-function-calling.md](chapters/03-function-calling.md) | ✅ 已完成 |
 | 04 | 记忆：滑动窗口、摘要压缩、跨会话检索 | [chapters/04-memory.md](chapters/04-memory.md) | ✅ 已完成 |
-| 05 | 规划：Plan-and-Execute / 任务分解 | — | 待开始 |
-| 06 | 反思：Self-Refine / 自我检查 | — | 待开始 |
-| 07 | 多 agent 协作：Supervisor 与消息传递 | — | 待开始 |
-| 08 | 工程化：日志、重试、成本与限流 | — | 待开始 |
-| 09 | 评测：怎么知道它变好了 | — | 待开始 |
-| 10 | 组装成"个人助理"：入口、持久化、真实工具、安全边界 | — | 待开始 |
+| 05 | 检索：切分、BM25、embedding、RRF、重排、评估 | [chapters/05-retrieval.md](chapters/05-retrieval.md) | ✅ 已完成 |
+| 06 | 规划：Plan-and-Execute / 任务分解 | — | 待开始 |
+| 07 | 反思：Self-Refine / 自我检查 | — | 待开始 |
+| 08 | 多 agent 协作：Supervisor 与消息传递 | — | 待开始 |
+| 09 | 工程化：日志、重试、成本与限流 | — | 待开始 |
+| 10 | 评测：怎么知道它变好了 | — | 待开始 |
+| 11 | 组装成"个人助理"：入口、持久化、真实工具、安全边界 | — | 待开始 |
 
 ## 6. 版本管理
 

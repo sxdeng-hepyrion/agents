@@ -16,6 +16,7 @@
 | 02 | 工具体系：注册表、参数 schema、写操作确认 | [chapters/02-tool-system.md](chapters/02-tool-system.md) | `code/ch02_tools.py` |
 | 03 | 原生 function calling；shell 工具与 code agent；MCP | [chapters/03-function-calling.md](chapters/03-function-calling.md) | `code/ch03_function_calling.py`、`code/ch03_code_agent.py`、`code/ch03_mcp.py` |
 | 04 | 记忆：滑动窗口、摘要压缩、跨会话检索 | [chapters/04-memory.md](chapters/04-memory.md) | `code/ch04_memory.py` |
+| 05 | 检索：切分、BM25、重排与评估 | [chapters/05-retrieval.md](chapters/05-retrieval.md) | `code/ch05_retrieval.py` |
 
 ## 跑起来
 
