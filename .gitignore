@@ -1,0 +1,19 @@
+__pycache__/
+*.pyc
+*.pyo
+
+# 本地实验产物
+.tmp/
+result.txt
+out.txt
+*.log
+
+# 环境与密钥
+.env
+.env.*
+.venv/
+venv/
+
+.DS_Store
+.idea/
+.vscode/
